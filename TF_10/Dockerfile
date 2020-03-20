@@ -1,6 +1,6 @@
-# cuda 10.1 compatible docker
+# cuda 10.2 compatible docker
 
-FROM nvidia/cuda:10.0-cudnn7-runtime-ubuntu18.04
+FROM nvidia/cuda:10.2-cudnn7-runtime-ubuntu18.04
 
 ENV DEBIAN_FRONTEND=noninteractive
 
