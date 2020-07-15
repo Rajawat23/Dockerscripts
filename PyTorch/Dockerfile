@@ -19,11 +19,13 @@ RUN ln -s /usr/bin/python3.6 /usr/bin/python
 RUN python -m pip install --upgrade pip
 
 # python packages
-RUN python -m pip install opencv-python
-RUN python -m pip install gym gym[atari] 
-RUN python -m pip install numpy 
-RUN python -m pip install matplotlib 
-RUN python -m pip install atari_py
-RUN python -m pip install tensorboardX
-RUN python -m pip install torch
-RUN python -m pip install ray
+# RUN python -m pip install opencv-python
+# RUN python -m pip install gym gym[atari] 
+# RUN python -m pip install numpy 
+# RUN python -m pip install matplotlib 
+# RUN python -m pip install atari_py
+# RUN python -m pip install tensorboardX
+# RUN python -m pip install torch
+# RUN python -m pip install torchvision
+# RUN python -m pip install ray
+RUN pip install -r requirements.txt
