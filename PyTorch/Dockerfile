@@ -6,8 +6,9 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository ppa:deadsnakes/ppa
-RUN apt-get update
+RUN apt-get update --fix-missing
 RUN apt-get install -y git xvfb ffmpeg python-opencv python3.6 python3-pip python3.6-dev
+RUN apt install -y libopenmpi-dev
 
 # make python 3.6 the default version
 RUN rm /usr/bin/python3
@@ -28,4 +29,5 @@ RUN python -m pip install --upgrade pip
 # RUN python -m pip install torch
 # RUN python -m pip install torchvision
 # RUN python -m pip install ray
+COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt

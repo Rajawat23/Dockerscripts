@@ -36,6 +36,7 @@ RUN pip install keras==2.2.4
 RUN pip install opencv-python==3.4.2.17
 RUN pip install atari-py==0.1.1
 RUN pip install pygame==1.9.6
+RUN pip install stable-baselines
 RUN pip install wandb
 
 # Get pygame env git repo
