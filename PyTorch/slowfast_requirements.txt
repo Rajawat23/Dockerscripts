@@ -1,0 +1,23 @@
+numpy
+git+https://github.com/facebookresearch/fvcore
+torch
+torchvision
+simplejson
+av
+iopath
+psutil
+opencv-python
+torchvision
+# tensorflow==1.15.0
+# opencv-python==4.0.0.21
+tensorboardX==1.4
+moviepy
+scikit-image==0.14.2
+tqdm==4.31.1
+pandas==0.24.1
+pathlib==1.0.1
+seaborn==0.9.0
+cython
+git+https://github.com/cocodataset/cocoapi.git#subdirectory=PythonAPI
+wandb
+# git+git://github.com/tristandeleu/pytorch-meta.git@794bf82348fbdc2b68b04f5de89c38017d54ba59

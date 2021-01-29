@@ -9,13 +9,13 @@ RUN apt-get install -y software-properties-common
 
 RUN add-apt-repository ppa:deadsnakes/ppa
 RUN apt-get update
-RUN apt-get install -y git xvfb ffmpeg python-opencv python3.6 python3-pip python3.6-dev unzip wget
+RUN apt-get install -y git xvfb ffmpeg python-opencv python3.7 python3-pip python3.7-dev unzip wget
 
 # make python 3.6 the default version
 RUN rm /usr/bin/python3
 RUN rm /usr/bin/python
-RUN ln -s /usr/bin/python3.6 /usr/bin/python3
-RUN ln -s /usr/bin/python3.6 /usr/bin/python
+RUN ln -s /usr/bin/python3.7 /usr/bin/python3
+RUN ln -s /usr/bin/python3.7 /usr/bin/python
 
 # upgrade pip
 RUN python -m pip install --upgrade pip
@@ -36,7 +36,7 @@ RUN pip install keras==2.2.4
 RUN pip install opencv-python==3.4.2.17
 RUN pip install atari-py==0.1.1
 RUN pip install pygame==1.9.6
-RUN pip install stable-baselines
+# RUN pip install stable-baselines
 RUN pip install wandb
 
 # Get pygame env git repo
