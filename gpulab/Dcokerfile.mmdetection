@@ -1,3 +1,5 @@
+From gitlab.ilabt.imec.be:4567/ilabt/gpu-docker-stacks/tensorflow-notebook
+
 ARG PYTORCH="1.6.0"
 ARG CUDA="10.1"
 ARG CUDNN="7"
@@ -27,4 +29,3 @@ RUN pip install mmcv-full==latest+torch1.6.0+cu101 -f https://download.openmmlab
 RUN pip install wandb
 # clean conda
 RUN conda clean --all
-
